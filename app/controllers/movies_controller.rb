@@ -36,7 +36,7 @@ class MoviesController < ApplicationController
     @movie.image_url = params[:image_url]
     @movie.director_id = params[:director_id]
 
-    render("show")
+    redirect_to("http://localhost:3000/movies")
   end
 
   def destroy
